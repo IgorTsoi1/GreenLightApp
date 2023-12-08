@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/accountFrameLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AccountFragment">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_man_driver"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textColor="@color/green"
+                android:fontFamily="@font/mulish_medium"
+                android:text="Настройки"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mulish_medium"
+                android:text="аккаунта"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/loginEditText"
+                android:padding="20dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:hint="Логин"
+                android:textColorHint="@color/green"
+                android:layout_height="70dp"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:hint="Пароль"
+                android:textColorHint="@color/green"
+                android:layout_height="70dp"/>
+
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/editButton"
+                android:text="Изменить"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                app:cornerRadius="5dp"
+                android:backgroundTint="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/green"
+                android:text="Удалить аккаунт"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                app:cornerRadius="5dp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/adminButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/green"
+                android:text="Админ панель"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                app:cornerRadius="5dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

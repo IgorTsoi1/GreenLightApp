@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/green"
+                android:textSize="40sp"
+                android:text="Панель администратора"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:text="Список тестов"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/testRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                />
+
+           <Button
+               android:id="@+id/createTestButton"
+               android:textSize="25sp"
+               android:layout_marginTop="10dp"
+               android:textAllCaps="false"
+               android:text="Добавить тест"
+               android:layout_width="match_parent"
+               android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:text="Список вопросов"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/questionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                />
+
+            <Button
+                android:id="@+id/createQuestionButton"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Добавить вопрос"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:text="Список ответов"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/answerRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                />
+
+            <Button
+                android:id="@+id/createAnswerButton"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Добавить ответ"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <Button
+                android:id="@+id/backButton"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Назад"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

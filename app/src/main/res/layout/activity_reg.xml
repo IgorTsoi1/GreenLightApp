@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/ic_cars"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/green"
+                android:textSize="45sp"
+                android:text="Создание"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:fontFamily="@font/mulish_medium"
+                android:textColor="@color/black"
+                android:textSize="40sp"
+                android:text="аккаунта"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linear_layout_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/loginEditText"
+                    android:padding="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:hint="Логин"
+                    android:textColorHint="@color/green"
+                    android:layout_height="70dp"/>
+
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:padding="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_background"
+                    android:layout_width="match_parent"
+                    android:hint="Пароль"
+                    android:textColorHint="@color/green"
+                    android:layout_height="70dp"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/createButton"
+                    android:text="Создать"
+                    android:textSize="24sp"
+                    android:layout_marginTop="15dp"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <Button
+                    android:textAllCaps="false"
+                    android:id="@+id/backButton"
+                    android:text="Назад"
+                    android:textSize="24sp"
+                    android:layout_marginTop="15dp"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/green"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

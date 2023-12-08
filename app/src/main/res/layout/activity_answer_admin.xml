@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AnswerAdminActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/answerNameEditText"
+                android:background="@drawable/edit_text_background"
+                android:padding="20dp"
+                android:hint="Введите ответ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <EditText
+                android:inputType="number"
+                android:layout_marginTop="20dp"
+                android:id="@+id/pointsEditText"
+                android:background="@drawable/edit_text_background"
+                android:padding="20dp"
+                android:hint="Кол-во очков за ответ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Добавить"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+            <Button
+                android:id="@+id/backButton"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:text="Назад"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
